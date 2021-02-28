@@ -1,0 +1,10 @@
+{{ define "main"}}    
+<h1>THIS IS A LIST PAGE</h1>  
+   And this is a test 
+<ul>
+    {{ range .Pages }}
+         <li><a href="{{ .Permalink}}">{{ .Title }}</a> </li>
+    {{end}}
+ </ul>
+{{ end }}
+   

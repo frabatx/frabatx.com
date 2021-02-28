@@ -1,27 +1,5 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Frabatx site"
-theme = "personal"
+title = "Frabatx"
 
 
-[menu]
-  [[menu.main]]
-    name = "/home"
-    pre = "home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "/my work"
-    pre = "pen-tool"
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    name = "/my blog"
-    pre = "pen-tool"
-    url = "/posts/"
-    weight = 3
-  [[menu.main]]
-    name = "/your tourn"
-    pre = "contact"
-    url = "/"
-    weight = 4
