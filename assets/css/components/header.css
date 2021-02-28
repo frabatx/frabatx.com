@@ -52,7 +52,7 @@ nav {
     justify-content: left;
     align-items: center;
     padding-left: 10px;
-    border-right: 1px solid var(--secondary);
+    border-right: 1px solid white;
     cursor: pointer;
 }
 .nav-column a{

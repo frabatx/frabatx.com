@@ -4,17 +4,20 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
     <!-- Style -->
     {{ $style := resources.Get "css/style.css"}}
-    {{ $components := resources.Match "css/components"}}
+    {{ $components := readDir "assets/css/components"}}
     
     {{ range $components}}
         {{ $component := resources.Get (printf "css/components/%s" .Name) }}
-        {{ $style = slice $style . | resources.Concat .Name }}
+        {{ $style = slice $component $style | resources.Concat .Name }}
     {{ end}}
-
+    
     {{ $style := slice $style | resources.Concat "all.css"  | minify | fingerprint}}
+    
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+    
     <!-- Definisco il titolo  -->
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}
