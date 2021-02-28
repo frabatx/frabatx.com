@@ -6,17 +6,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     
     <!-- Style -->
-    {{ $style := resources.Get "css/style.css"}}
-    {{ $components := readDir "assets/css/components"}}
+    {{ $style := resources.Get "scss/style.scss"}}
+    {{ $components := readDir "assets/scss/components"}}
     
     {{ range $components}}
-        {{ $component := resources.Get (printf "css/components/%s" .Name) }}
-        {{ $style = slice $component $style | resources.Concat .Name }}
+        {{ $component := resources.Get (printf "scss/components/%s" .Name) }}
+        {{ $style = slice $style $component | resources.Concat .Name }}
     {{ end}}
     
-    {{ $style := slice $style | resources.Concat "all.css"  | minify | fingerprint}}
+    {{ $style := slice $style | resources.Concat "all.css" | toCSS  | minify | fingerprint}}
     
-    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
     
     <!-- Definisco il titolo  -->
     {{ $title := print .Site.Title " | " .Title }}

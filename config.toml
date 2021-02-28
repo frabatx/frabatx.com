@@ -2,4 +2,16 @@ baseURL = "https://frabatx.com/"
 languageCode = "ita"
 title = "Frabatx"
 
+[menu]
 
+  [[menu.main]]
+    name = "my_blog"
+    url = "/my_blog/"
+
+  [[menu.main]]
+    name = "my_work"
+    url = "/my_work/"
+  
+  [[menu.main]]
+    name = "your_turn"
+    url = "/your_turn"

@@ -3,10 +3,10 @@
     <div class="nav-border-left"></div>
     <div class="nav-content">
         <div class="nav-column"><a href="">> /Frabatx</a></div>
-            {{ range .Pages}}
+            {{ range .Site.Menus.main }}
             <div class="nav-column">
-                <a href="{{ .Permalink }}">
-                   /{{ .Title }}
+                <a href="{{ .URL }}">
+                   /{{.Name}}
                 </a>
             </div>
             {{ end }}

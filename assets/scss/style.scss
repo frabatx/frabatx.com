@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --background: rgb(10, 10, 10);
-    --secondary: rgba(40, 40, 40, 0.99);
-    --main-text: white;
-  }
+
+$background: rgb(10, 10, 10);
+$secondary: rgba(40, 40, 40, 0.99);
+$main-text: white;
+
 
 body {
     height: 100vh;
     position:relative;
-    background-color: var(--background);
+    background-color: $background;
     font-family: 'Montserrat', sans-serif;
-    color: var(--main-text);
+    color: $main-text;
     
 }
 
