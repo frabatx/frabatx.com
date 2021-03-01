@@ -17,7 +17,7 @@
     {{ $style := slice $style | resources.Concat "all.css" | toCSS  | minify | fingerprint}}
     
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    
+    <!-- JS  -->
     <!-- Definisco il titolo  -->
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}
