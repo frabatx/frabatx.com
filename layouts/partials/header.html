@@ -1,12 +1,13 @@
-<nav>
-    <div class="logo">
-        <h4>> /Frabatx</h4>
-    </div>
-    <ul class="nav-links">
+<nav class="navbar">
+    
+    <ul class="navbar-na">
+        <li class="nav-item logo">
+            <span> .frabatx()</span>
+        </li>
         {{ range .Site.Menus.main }}
-            <li class="nav-column">
-                <a href="{{ .URL }}">
-                   /{{.Name}}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ .URL }}">
+                    <span class="link-text">.{{.Name}}()</span>
                 </a>
             </li>
         {{ end }}

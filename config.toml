@@ -4,14 +4,22 @@ title = "Frabatx"
 
 [menu]
 
-  [[menu.main]]
-    name = "my_blog"
-    url = "/my_blog/"
+ [[menu.main]]
+    name = "skills"
+    url = "/skills"
+    weight = 1
+
+ [[menu.main]]
+    name = "projects"
+    url = "/projects/"
+    weight = 2
 
   [[menu.main]]
-    name = "my_work"
-    url = "/my_work/"
-  
+    name = "blog"
+    url = "/blog/"
+    weight = 3
+ 
   [[menu.main]]
-    name = "your_turn"
-    url = "/your_turn"
+    name = "contact"
+    url = "/contact"
+    weight = 4

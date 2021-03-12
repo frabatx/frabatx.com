@@ -1,14 +1,13 @@
 
 // Colors
-$primary: rgb(10, 10, 10); // nero 
-$background: rgb(17,67,81); // petrolio
-$petroil-black: rgb(4, 19, 17);
-$dark-green: rgb(13, 48, 46);
-$green: rgb(38, 77, 76);
-$light-green: rgb(62, 92, 103);
-$grey-green: rgb(62, 92, 103);
-$secondary: rgb(40, 40, 40); //grigio scuro
-$main-text: rgb(245, 245, 245); //bianco sporco
+$black: rgb(10, 10, 10);
+$violet: #240A6D; 
+$purple: #C000C3;
+$green: #0B8D00;
+$yellow: #FFB800;
+$red: #FF0000;
+$grey: rgb(62, 92, 103);
+$main-text: rgb(245, 245, 245); 
 
 //Color palette MIDNIGHT GREEN
 
@@ -22,15 +21,19 @@ $main-text: rgb(245, 245, 245); //bianco sporco
 body {
     height: 100vh;
     position:relative;
-    background-color: $background;
+    background: linear-gradient(to right, $black, $violet);
     font-family: 'Montserrat', sans-serif;
     color: $main-text;
-    
 }
 
+body::-webkit-scrollbar{
+    width: .5rem;
+}
 
+body::-webkit-scrollbar-track{
+    background: $black;
+}
 
-.footer{
-    position: absolute;
-    bottom: 0px;
+body::-webkit-scrollbar-thumb{
+    background: $violet;
 }
