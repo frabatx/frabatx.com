@@ -1,5 +1,88 @@
+
+
 .main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     margin-left: 20rem;
-    padding: 1rem;
+    padding: 4rem 0rem;
 }
 
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Decorazioni
+.angular{
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.2rem;
+    color: #616161;
+}
+
+
+.html{
+    position: absolute;
+    top:2rem;
+}
+.body{
+    position: absolute;
+    top:4rem;
+    margin-left: 1rem;
+}
+.h1{
+    margin-left: 1rem;
+}
+.p{
+    margin-left: 1rem;
+}
+
+
+
+// Presentazioni
+.hello-friend{
+    margin-left: 3rem;
+    font-size: 5rem;
+}
+.description{
+    font-size: 1.5rem;
+    color: #616161;
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        margin:4rem 1rem;
+    }
+
+    
+
+    .angular{
+        font-size: 1rem;
+    }
+
+    .hello-friend{
+        font-size: 3.5rem;
+    }
+
+    .description{
+        font-size:1rem
+    }
+}
+
+@media screen and (max-width: 550px){
+    .main{
+        margin:2rem 1rem;
+    }
+    .hello-friend{
+        font-size: 2rem;
+    }
+
+    .description{
+        font-size:.7rem
+    }
+
+}
