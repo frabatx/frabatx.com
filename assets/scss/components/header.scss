@@ -2,12 +2,15 @@
 
 .navbar {
     position: fixed;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0% 40% , rgba(36,10,109, 0) );
     transition: width 600ms ease;
     font-family: 'Roboto Mono', monospace;
     top: 0;
     width: 15rem;
     height: 100vh;
+    background: #000000;
+    background: linear-gradient(0deg,#000000 50%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(0deg,#000000 50%, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(0deg,#000000 50%, rgba(0,0,0,0) 100%);
 }
 
 .navbar-na{
@@ -66,34 +69,39 @@
     margin: 5px;
 }
 
+
+
 @media screen and (max-width: 768px){
     
     .burger{
         display: block;
         z-index: 3;
     }
-
+    
     .navbar{
-        background: linear-gradient(to left, rgba(0, 0, 0, 1) 0% 70% , rgba(36,10,109, 0) );
         position:fixed;
         right:0px;
         height: 100%;
-        width: 50%;
+        width: 70%;
         display: flex;
         flex-direction:column;
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: 2;
+        background: #000000;
+        background: linear-gradient(180deg,#000000 50%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(180deg,#000000 50%, rgba(0,0,0,0) 100%);
+        background: -moz-linear-gradient(180deg,#000000 50%, rgba(0,0,0,0) 100%);
     }
     
     .nav-link{
         opacity: 0;
     }
-
+    
     .navbar-na{
         margin: 50vh 0;
-
+        
     }
     .logo{
         display: none;
@@ -107,7 +115,7 @@
 @keyframes navLinkFade{
     from{
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(300px);
     }
     to{
         opacity: 1;
