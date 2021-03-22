@@ -1,0 +1,86 @@
+.terminal-container{
+    line-height: 1.2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    position: relative;
+    width: 1vw;
+    height: 1vw;
+    margin: 10vh auto;
+  }
+  
+  #background-layer{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+  }
+  #background-layer{
+    line-height: 1.2rem;
+    box-sizing: border-box;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.50);
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(20px);
+  }
+  
+  
+  #typed-paragraph {
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+    display: inline-block;
+    height:1vm;
+    overflow: hidden;
+  }
+  
+  
+  #target, 
+  #im {
+    white-space: pre;
+    display: inline-block;
+  }
+  
+  #target,
+  #im,
+  #cursor {
+    color: white;
+    font-family: monospace;
+    line-height: 2;
+  }
+  #codename{
+    display: inline-block;
+  }
+  
+  #cursor{
+    display: inline-block;
+    font-size: 1.5em;
+    transform: scale(7, 1);
+    visibility:hidden;
+  }
+  
+  #cursor{
+    opacity: 1;
+    font-weight: 800;
+  }
+  
+  #rows{
+    position:relative;
+    overflow:hidden;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .wrapper{
+      font-size: .5rem;
+    }
+    #typed-paragraph{
+      padding: 1.5rem;
+    }
+  }

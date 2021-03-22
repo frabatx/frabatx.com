@@ -25,9 +25,9 @@ body {
     color: $main-text;
     overflow-x: hidden;
     background: #000000;
-background: linear-gradient(to right,$black, #6100ff);
-background: -webkit-linear-gradient(to right,$black, #6100ff);
-background: -moz-linear-gradient(to right,$black, #6100ff);
+    background: -webkit-linear-gradient(to right,$black, #6100ff);
+    background: linear-gradient(to right,$black, #6100ff);
+    background: -moz-linear-gradient(to right,$black, #6100ff);
 }
 
 body::-webkit-scrollbar{
