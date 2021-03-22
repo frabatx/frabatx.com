@@ -25,9 +25,10 @@ body {
     color: $main-text;
     overflow-x: hidden;
     background: #000000;
-    background: -webkit-linear-gradient(to right,$black, #6100ff);
-    background: linear-gradient(to right,$black, #6100ff);
-    background: -moz-linear-gradient(to right,$black, #6100ff);
+    background-image: -webkit-linear-gradient(to right,$black, #6100ff);
+    background-image: linear-gradient(to right,$black, #6100ff);
+    background-image: -moz-linear-gradient(to right,$black, #6100ff);
+    backdrop-filter: blur(8px);
 }
 
 body::-webkit-scrollbar{
