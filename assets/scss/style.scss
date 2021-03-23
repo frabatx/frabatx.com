@@ -1,12 +1,13 @@
 
 // Colors
 $black: rgb(10, 10, 10);
-$violet: #240A6D; 
-$purple: #C000C3;
+$violet: #682AE9; 
+$purple: #853586;
 $green: #0B8D00;
 $yellow: #FFB800;
 $red: #FF0000;
-$grey: rgb(62, 92, 103);
+$grey: rgb(128, 128, 128);
+$darkgrey: rgb(62, 92, 103);
 $main-text: rgb(245, 245, 245); 
 
 //Color palette MIDNIGHT GREEN
@@ -19,16 +20,16 @@ $main-text: rgb(245, 245, 245);
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     position:relative;
     font-family: 'Montserrat', sans-serif;
     color: $main-text;
-    overflow-x: hidden;
-    background: #000000;
-    background-image: -webkit-linear-gradient(to right,$black, #6100ff);
-    background-image: linear-gradient(to right,$black, #6100ff);
-    background-image: -moz-linear-gradient(to right,$black, #6100ff);
-    backdrop-filter: blur(8px);
+    overflow: hidden;
+    background-image:linear-gradient(to right, rgb(9, 0, 15) 0 5%, rgba(255, 255, 255, 0) 20% 100%), 
+                        url("/images/auroraoriginal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(50px);
 }
 
 body::-webkit-scrollbar{

@@ -7,7 +7,7 @@
 }
 .wrapper {
     font-family: 'Roboto Mono', monospace;
-    font-size: .8rem;
+    font-size: 1rem;
     position: relative;
     width: 1vw;
     height: 1vw;
@@ -25,8 +25,8 @@
     line-height: 1.2rem;
     box-sizing: border-box;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.50);
-    background-color: rgba(0,0,0,0.3);
-    backdrop-filter: blur(20px);
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(50px);
   }
   
   
@@ -51,7 +51,6 @@
   #im,
   #cursor {
     color: white;
-    font-family: monospace;
     line-height: 2;
   }
   #codename{
