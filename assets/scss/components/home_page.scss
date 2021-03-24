@@ -50,15 +50,189 @@
 .hello-friend{
     margin-left: 3rem;
     font-size: 5rem;
-    //text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
 }
 .description{
     font-size: 1.5rem;
-    background: -webkit-linear-gradient(45deg,$purple, $violet);
+    background: -webkit-linear-gradient(45deg,$yellow, $violet);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 3rem;
 }
+
+// Glitch
+.glitch {
+    width: 100%;
+    color: white;
+    position: relative;
+    padding: 0;
+}
+
+.glitch::before, .glitch::after {
+    width: 100%;
+    color: white;
+    content: "I'm Frabatx";
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+.glitch::before {
+    left: 3px;
+    text-shadow: -2px 0 $purple;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+}
+
+.glitch::after {
+    left: -3px;
+    text-shadow: -2px 0 $violet;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+    0% {
+        clip: rect(1rem, 30rem, 9rem, 1rem);
+    }
+    5% {
+        clip: rect(1rem, 30rem, 2rem, 1rem);
+    }
+    10% {
+        clip: rect(5rem, 30rem, 9rem, 1rem);
+    }
+    15% {
+        clip: rect(5rem, 30rem, 3rem, 1rem);
+    }
+    20% {
+        clip: rect(7rem, 30rem, 2rem, 1rem);
+    }
+    25% {
+        clip: rect(8rem, 30rem, 7rem, 1rem);
+    }
+    30% {
+        clip: rect(6rem, 30rem, 9rem, 1rem);
+    }
+    35% {
+        clip: rect(7rem, 30rem, 2rem, 1rem);
+    }
+    40% {
+        clip: rect(3rem, 30rem, 5rem, 1rem);
+    }
+    45% {
+        clip: rect(8rem, 30rem, 8rem, 1rem);
+    }
+    50% {
+        clip: rect(6rem, 30rem, 10rem, 1rem);
+    }
+    55% {
+        clip: rect(4rem, 30rem, 7rem, 1rem);
+    }
+    60% {
+        clip: rect(9rem, 30rem, 9rem, 1rem);
+    }
+    65% {
+        clip: rect(2rem, 30rem, 2rem, 1rem);
+    }
+    70% {
+        clip: rect(7rem, 30rem, 8rem, 1rem);
+    }
+    75% {
+        clip: rect(10rem, 30rem, 4rem, 1rem);
+    }
+    80% {
+        clip: rect(10rem, 30rem, 9rem, 1rem);
+    }
+    85% {
+        clip: rect(9rem, 30rem, 4rem, 1rem);
+    }
+    90% {
+        clip: rect(9rem, 30rem, 7rem, 1rem);
+    }
+    95% {
+        clip: rect(5rem, 30rem, 9rem, 1rem);
+    }
+    100% {
+        clip: rect(10rem, 30rem, 1rem, 1rem);
+    }
+}
+
+@keyframes glitch-animation-2 {
+    0% {
+        clip: rect(4rem, 30rem, 2rem, 1rem);
+    }
+    5% {
+        clip: rect(3rem, 30rem, 8rem, 1rem);
+    }
+    10% {
+        clip: rect(8rem, 30rem, 8rem, 1rem);
+    }
+    15% {
+        clip: rect(10rem, 30rem, 9rem, 1rem);
+    }
+    20% {
+        clip: rect(8rem, 30rem, 10rem, 1rem);
+    }
+    25% {
+        clip: rect(1rem, 30rem, 9rem, 1rem);
+    }
+    30% {
+        clip: rect(9rem, 30rem, 8rem, 1rem);
+    }
+    35% {
+        clip: rect(6rem, 30rem, 10rem, 1rem);
+    }
+    40% {
+        clip: rect(8rem, 30rem, 8rem, 1rem);
+    }
+    45% {
+        clip: rect(3rem, 30rem, 8rem, 1rem);
+    }
+    50% {
+        clip: rect(8rem, 30rem, 8rem, 1rem);
+    }
+    55% {
+        clip: rect(3rem, 30rem, 10rem, 1rem);
+    }
+    60% {
+        clip: rect(1rem, 30rem, 10rem, 1rem);
+    }
+    65% {
+        clip: rect(5rem, 30rem, 7rem, 1rem);
+    }
+    70% {
+        clip: rect(10rem, 30rem, 10rem, 1rem);
+    }
+    75% {
+        clip: rect(4rem, 30rem, 1rem, 1rem);
+    }
+    80% {
+        clip: rect(8rem, 30rem, 5rem, 1rem);
+    }
+    85% {
+        clip: rect(6rem, 30rem, 1rem, 1rem);
+    }
+    90% {
+        clip: rect(7rem, 30rem, 4rem, 1rem);
+    }
+    95% {
+        clip: rect(8rem, 30rem, 4rem, 1rem);
+    }
+    100% {
+        clip: rect(5rem, 30rem, 7rem, 1rem);
+    }
+}
+
+
+// MEDIAQUERYES
 
 @media screen and (max-width: 768px){
     .main{

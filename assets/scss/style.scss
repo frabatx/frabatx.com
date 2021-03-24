@@ -7,7 +7,7 @@ $green: #0B8D00;
 $yellow: #FFB800;
 $red: #FF0000;
 $grey: rgb(128, 128, 128);
-$darkgrey: rgb(62, 92, 103);
+$darkgrey: rgb(0, 0, 0);
 $main-text: rgb(245, 245, 245); 
 
 //Color palette MIDNIGHT GREEN
@@ -25,8 +25,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $main-text;
     overflow: hidden;
-    background-image:linear-gradient(to right, rgb(9, 0, 15) 0 5%, rgba(255, 255, 255, 0) 20% 100%), 
-                        url("/images/auroraoriginal.jpg");
+    background:linear-gradient(to right, $violet, $black);
+    // background-image: linear-gradient(to right, rgb(9, 0, 15) 0 5%, rgba(255, 255, 255, 0) 20% 100%), 
+    //                     url("/images/auroraoriginal.jpg");
+                        
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(50px);
