@@ -25,10 +25,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $main-text;
     overflow-x: hidden;
-    background:linear-gradient(to left, $violet, $black);
-    // background-image: linear-gradient(to right, rgb(9, 0, 15) 0 5%, rgba(255, 255, 255, 0) 20% 100%), 
-    //                     url("/images/auroraoriginal.jpg");
-                        
+    background:linear-gradient(to left, $violet, $black);                 
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(50px);
