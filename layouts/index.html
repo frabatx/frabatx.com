@@ -6,19 +6,23 @@
         {{ partial "header.html" .}}
 
         <!-- TERMINAL ANIMATION -->
-        <div class="terminal-container">
-            <div class="wrapper">
-                <div id="background-layer"></div>
-                <div id="typed-paragraph">
-                  <span id="codename">[frabatx@admin]$: > </span>
-                  <span id="im"></span>
-                  <span id="target"></span>
-                  <span id="prima"></span>
-                  <span id="seconda"></span>
-                  <span id="terza"></span>
-                  <span id="quarta"></span>
-                  <span id="cursor">|</span>
-                  <div id="rows"></div>
+        <div class="container-animation">
+            <a id="btn-skip">Skip animation</a>
+            <!-- TERMINAL ANIMATION -->
+            <div class="terminal-container">
+                <div class="wrapper">
+                    <div id="background-layer"></div>
+                    <div id="typed-paragraph">
+                    <span id="codename">[frabatx@admin]$: > </span>
+                    <span id="im"></span>
+                    <span id="target"></span>
+                    <span id="prima"></span>
+                    <span id="seconda"></span>
+                    <span id="terza"></span>
+                    <span id="quarta"></span>
+                    <span id="cursor">|</span>
+                    <div id="rows"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,36 +31,27 @@
         <!-- MAIN PRESENTATION -->
         <div class="main">
             <div class="content">
-                <div class="html angular">
-                    &lt html &gt
+                <div class="html angular">&lt html &gt</div>
+                <div class="body angular">&lt body &gt</div>
+                <div class="h1 angular">&lt h1 &gt</div>
+                <div class="hello-friend">
+                    <h1>Hi,<br></h1>
+                    <h1 class="glitch">I'm Frabatx<br></h1>
+                    <h1>I'm a developer</h1>
                 </div>
-                <div class="body angular">
-                    &lt body &gt
-                </div>
-                <div class="h1 angular">
-                    &lt h1 &gt
-                </div>
-
-                <h1 class="hello-friend">
-                    Hi,<br>
-                    <div class="glitch">I'm Frabatx</div>
-                    I'm a developer
-                </h1>
-
-                <div class="h1 angular">
-                    &lt /h1 &gt
-                </div>
-                <div class="p angular">
-                    &lt p &gt
-                </div>
-                
+                <div class="h1 angular">&lt /h1 &gt</div>
+                <div class="p angular">&lt p &gt</div>
                 <p class="description">Data Science Student / Full Stack .Net Developer</p>
-                
-                <div class="p angular">
-                    &lt /p &gt
-                </div>
+                <div class="p angular">&lt /p &gt</div>
             </div>
         </div>
+
+        <div class="main">
+            <div class="content">
+                <p>Hello World()</p>
+            </div>
+        </div>
+
     {{ partial "script.html" .}} 
     </body>
 </html>

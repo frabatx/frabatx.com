@@ -1,10 +1,47 @@
-.terminal-container{
-    line-height: 1.2rem;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-animation{
+  position: relative;
+  min-height: 100vh;
+  opacity: 1;
 }
+
+.terminal-container{
+  position: relative;
+  line-height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-skip {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  color: $grey;
+  cursor: pointer;
+  font-size:16px;
+  margin: 0 0 3rem;
+  
+  text-decoration: none;
+  width: 30vw;
+  transition: all 280ms ease-in-out;
+  
+  @media(min-width: 600px) {
+      
+    margin: 0 1em 2em;
+  }
+  
+  &:hover { text-decoration: none; }
+}
+
+#btn-skip {
+  background: rgba(0,0,0, 0);
+  font-weight: 100;
+}
+
+#btn-skip:hover {
+  letter-spacing: 5px;
+}
+
 .wrapper {
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
@@ -24,9 +61,8 @@
   #background-layer{
     line-height: 1.2rem;
     box-sizing: border-box;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.50);
-    background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(50px);
+    background-color: black;
+    border: solid 10px #282A35;
   }
   
   

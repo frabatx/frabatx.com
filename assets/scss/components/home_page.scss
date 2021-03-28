@@ -1,12 +1,12 @@
 
 
 .main{
-    position: absolute;
-    height: 92vh;
+    //position: absolute;
+    height: 100vh;
     margin-left: 20rem;
     padding: 4rem 0rem;
     display: none;
-    visibility: hidden;
+    opacity: 0;
 }
 
 .content{
@@ -49,7 +49,7 @@
 // Presentazioni
 .hello-friend{
     margin-left: 3rem;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .description{
     font-size: 1.5rem;
@@ -244,7 +244,7 @@
     }
 
     .hello-friend{
-        font-size: 3.5rem;
+        font-size: 1.6rem;
         //text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.6);
     }
 
@@ -258,7 +258,7 @@
         margin:2rem 1rem;
     }
     .hello-friend{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .description{
