@@ -1,3 +1,10 @@
+// DEFINIZIONI
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.defaults({
+  toggleActions: "play reverse play reverse"
+});
+
 // Frasi
 const firstSentence = "Hi! I'm "
 const secondSentence = ["Francesco", "Frabatx"]
@@ -71,13 +78,18 @@ terminalFineTl.set('#codename, #cursor, #target,#im, #prima, #seconda,#terza,#qu
               .set('.container-animation', {display: "none"})
               // .set('.wrapper', {display: "none"})
               .to('.fixed-stick', {duration: 1, opacity: 1})
-              .to('.main', {duration: 3, opacity: 1, display: "block"})
+              .to('.main', {duration: 3, 
+                opacity: 1, 
+                display: "block",
+                onComplete: scroll
+              })
 
 // ANIMAZIONE BUBBLE PULSE
 var bubblePulseTl = gsap.timeline({repeat: -1})
 
 bubblePulseTl.to(".bubble-pulse",{duration: 0.5, scale: 0.9, opacity: 1})
-             .to(".bubble-pulse",{duration: 1.1,scale: 2,opacity: 0})             
+             .to(".bubble-pulse",{duration: 1.1,scale: 2,opacity: 0})       
+             
 
 // MASTER TIMELINE
 let masterTl = gsap.timeline()
@@ -134,29 +146,16 @@ $("#btn-skip").on('click', ()=>{
   masterTl.seek("last");
 })
 
-// SCROLL TRIGGER ANIMATION
-gsap.registerPlugin(ScrollTrigger);
+function scroll(){
+  gsap.to("#secondo", {
+    scrollTrigger:{
+      trigger: "#secondo",
+      start: "top 80%",
+      end: "bottom 30%"
+    }, 
+    duration: 2,
+    visibility:"visible",
+    text: ".CurriculumVitae('*')"
+  });
 
-ScrollTrigger.defaults({
-  toggleActions: "play reverse play reverse"
-});
-
-gsap.to("#primo", {
-  scrollTrigger:{trigger: "#secondo",start: "bottom 80%",end: "top 40%",markers: true}, 
-  duration: 2,
-  visibility:"visible",
-  text: "My personal experience"
-});
-gsap.to("#secondo", {
-  scrollTrigger:{trigger: "#secondo",start: "bottom 80%",end: "top 40%",id: "secondo",markers: true}, 
-  duration: 2,
-  visibility:"visible",
-  text: ".CurriculumVitae('*')"
-});
-
-gsap.to("#terzo", {
-  scrollTrigger:{trigger: "#secondo",start: "bottom 80%",end: "top 40%",markers: true}, 
-  duration: 2,
-  visibility:"visible",
-  text: "Little spoiler, it's not that long"
-});
+}

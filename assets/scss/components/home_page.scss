@@ -13,9 +13,9 @@
 .content{
     position: relative;
     width: 100%;
-    height: 94vh;
+    height: 100%;
     display: flex;
-    margin-bottom: 6vh;
+    //margin-bottom: 6vh;
     flex-direction: column;
     justify-content: center;
     
@@ -276,9 +276,12 @@
 #secondo,
 #primo,
 #terzo{
-  color: white;
-  height: 3rem;
-  //visibility:hidden;
+    position: absolute;
+    top:50%;
+    left:0;
+    color: white;
+    height: 3vh;
+    visibility:hidden;
 }
 
 #primo,
@@ -295,7 +298,6 @@
 #containerfrasi{
   display:flex;
   flex-direction: column;
-/*   flex-direction: column; */
 }
 
 .frase{
