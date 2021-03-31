@@ -147,15 +147,15 @@ $("#btn-skip").on('click', ()=>{
 })
 
 function scroll(){
-  gsap.to("#secondo", {
+  gsap.to("#cv", {
     scrollTrigger:{
-      trigger: "#secondo",
+      trigger: "#cv",
       start: "top 80%",
       end: "bottom 30%"
     }, 
     duration: 2,
     visibility:"visible",
-    text: ".CurriculumVitae('*')"
+    text: `.CurriculumVitae('*')`
   });
 
 }

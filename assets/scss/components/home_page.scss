@@ -48,10 +48,8 @@
 
 
 // CONTENT
-
-.hello-friend{
+.main-text{
     margin-left: 3rem;
-    font-size: 3rem;
 }
 .description{
     font-size: 1.5rem;
@@ -273,9 +271,9 @@
 }
 
 // SECONDA SCHEDA
-#secondo,
-#primo,
-#terzo{
+#cv,
+#intro-cv,
+#desc-cv{
     position: absolute;
     top:50%;
     left:0;
@@ -284,25 +282,10 @@
     visibility:hidden;
 }
 
-#primo,
-#terzo{
+#intro-cv,
+#desc-cv{
   color: grey;
   font-size: 1rem;
-}
-
-// .prima .cursor,
-// .terza .cursor{
-//   font-size: 2rem;
-// }
-
-#containerfrasi{
-  display:flex;
-  flex-direction: column;
-}
-
-.frase{
-  display: flex;
-  align-items:center;
 }
 
 
@@ -321,11 +304,6 @@
         left: 1rem;
     }
 
-    .hello-friend{
-        font-size: 1.6rem;
-        //text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.6);
-    }
-
     .description{
         font-size:1rem
     }
@@ -335,10 +313,7 @@
     .main{
         margin:0 1rem;
     }
-    .hello-friend{
-        font-size: 1.2rem;
-    }
-
+    
     .description{
         font-size:.7rem
     }

@@ -43,3 +43,20 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: $violet;
 }
+
+h1{
+    font-size: 3rem;
+}
+
+
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 550px){
+    h1{
+        font-size: 1.2rem;
+    }
+}
