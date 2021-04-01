@@ -9,6 +9,15 @@
     display: none;
     opacity: 0;
 }
+.main-minus{
+    //position: absolute;
+    width: 70vw;
+    height: 50vh;
+    margin-left: 250px;
+    padding: 6vh 0rem;
+    display: none;
+    opacity: 0;
+}
 
 .content{
     position: relative;
@@ -310,7 +319,7 @@
 // MEDIAQUERYES
 
 @media screen and (max-width: 768px){
-    .main{
+    .main, .main-minus{
         margin:0 2rem;
     }
 
@@ -333,7 +342,7 @@
 }
 
 @media screen and (max-width: 550px){
-    .main{
+    .main, .main-minus{
         width: 90vw;
         margin:0 1rem;
     }

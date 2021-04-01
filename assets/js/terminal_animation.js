@@ -80,7 +80,7 @@ terminalFineTl.set('#codename, #cursor, #target,#im, #prima, #seconda,#terza,#qu
               .set('.container-animation', {display: "none"})
               // .set('.wrapper', {display: "none"})
               .to('.fixed-stick', {duration: 1, opacity: 1})
-              .to('.main', {duration: 1, 
+              .to('.main, .main-minus', {duration: 1, 
                 opacity: 1, 
                 display: "block",
                 onComplete: scroll
