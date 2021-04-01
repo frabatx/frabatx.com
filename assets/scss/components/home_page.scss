@@ -53,7 +53,7 @@
 }
 
 .main-text{
-    margin-left: 3rem;
+    margin: 1rem 0 1rem 3rem;
 }
 
 
@@ -65,7 +65,6 @@
 }
 
 .description-text{
-    font-size: 1.3rem;
     background: -webkit-linear-gradient(45deg,$yellow, $violet);
     background-clip: text;
     -webkit-background-clip: text;
@@ -292,20 +291,23 @@
     visibility:hidden;
 }
 
+// TERZA SCHEDA
+#army{
+    margin-bottom: 0!important;
+}
+
 #years-army{
-    font-size:2rem!important;
+    font-size:2.2rem!important;
+    margin-bottom: 1rem;
 }
 
 #desc-army{
-    font-size: 1.3rem;
     margin-left: 3rem;
     color: $darkgrey
 }
 
 
 // MEDIAQUERYES
-
-
 
 @media screen and (max-width: 768px){
     .main{
@@ -321,21 +323,27 @@
     }
 
     .description{
-        top: 70%;
+        top: 73%;
         transform: translate(0, -70%);
     }
-    .description-text{
-        font-size:1rem;
+
+    #years-army{
+        font-size:2rem!important;
     }
 }
 
 @media screen and (max-width: 550px){
     .main{
+        width: 90vw;
         margin:0 1rem;
     }
     .description{
-        top: 73%;
+        top: 70%;
         transform: translate(0, -73%);
+    }
+    
+    #years-army{
+        font-size:1.5rem!important;
     }
 
 }

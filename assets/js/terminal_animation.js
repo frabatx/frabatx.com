@@ -174,7 +174,9 @@ function scroll(){
     scrollTrigger:{trigger: "#desc-cv"}, 
     duration: 2,
     visibility:"visible",
-    text: `&ltp&gt Spoiler! More studies than work experience &lt/p&gt`
+    text: `&ltp&gt 
+            Spoiler! More studies than work experience 
+            &lt/p&gt`
   });
 
   // ITALIAN ARMY
@@ -195,7 +197,8 @@ function scroll(){
     scrollTrigger:{trigger: "#desc-army"}, 
     duration: 2,
     visibility:"visible",
-    text: `Once I graduated, I went to the military. An extraordinary experience that led me to grow and visit different places in Italy!`
+    text: `Once I graduated, I joined the Italian army. 
+    An extraordinary experience that led me to grow and visit different places in Italy!`
   });
 
 }
