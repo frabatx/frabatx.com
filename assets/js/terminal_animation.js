@@ -2,7 +2,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
-  toggleActions: "play reverse play reverse"
+  toggleActions: "play reverse play reverse",
+  start:"top 90%",
+  end:"bottom 40%"
 });
 
 // Frasi
@@ -24,7 +26,7 @@ let terminalTl = gsap.timeline().addLabel("animazione-terminale");
 
 terminalTl.to('.wrapper', {duration:0.5, width: "70vw", delay: 0.5, ease: "power4.inOut"})
            .to('.wrapper', {duration:0.5, height: "70vh", delay: 0.5, ease: "power4.inOut"})
-           .from('#codename', {duration: 1, x: "-30vw" , ease: "power3.out"})
+           .from('#codename', {duration: 1, x: "-40vw" , ease: "power3.out"})
            .set('#cursor', {visibility: "visible"})
 
 // ANIMAZIONE HI, I'M
@@ -78,7 +80,7 @@ terminalFineTl.set('#codename, #cursor, #target,#im, #prima, #seconda,#terza,#qu
               .set('.container-animation', {display: "none"})
               // .set('.wrapper', {display: "none"})
               .to('.fixed-stick', {duration: 1, opacity: 1})
-              .to('.main', {duration: 3, 
+              .to('.main', {duration: 1, 
                 opacity: 1, 
                 display: "block",
                 onComplete: scroll
@@ -147,15 +149,53 @@ $("#btn-skip").on('click', ()=>{
 })
 
 function scroll(){
+  
+  // CURRICULUM
+  gsap.to("#intro-cv", {
+    scrollTrigger:{trigger: "#intro-cv"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `&ltp&gt My experiences &lt/p&gt`
+  });
+
   gsap.to("#cv", {
-    scrollTrigger:{
-      trigger: "#cv",
-      start: "top 80%",
-      end: "bottom 30%"
-    }, 
+    scrollTrigger:{trigger: "#cv"}, 
     duration: 2,
     visibility:"visible",
     text: `.CurriculumVitae('*')`
+  });
+
+  gsap.to(".bubble-pulse", {
+    scrollTrigger:{trigger: "#cv"}, 
+    backgroundColor: "#FFB800"
+  });
+
+  gsap.to("#desc-cv", {
+    scrollTrigger:{trigger: "#desc-cv"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `&ltp&gt Spoiler! More studies than work experience &lt/p&gt`
+  });
+
+  // ITALIAN ARMY
+
+  gsap.to("#army", {
+    scrollTrigger:{trigger: "#army"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `.ItalianArmy(0)`
+  });
+  gsap.to("#years-army", {
+    scrollTrigger:{trigger: "#years-army"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `<2012-2015>`
+  });
+  gsap.to("#desc-army", {
+    scrollTrigger:{trigger: "#desc-army"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `Once I graduated, I went to the military. An extraordinary experience that led me to grow and visit different places in Italy!`
   });
 
 }

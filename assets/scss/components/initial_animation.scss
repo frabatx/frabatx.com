@@ -6,7 +6,7 @@
 
 .terminal-container{
   position: relative;
-  line-height: 1.2rem;
+  //line-height: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +59,10 @@
     height: 100%;
   }
   #background-layer{
-    line-height: 1.2rem;
+    //line-height: 1.2rem;
     box-sizing: border-box;
     background-color: black;
-    border: solid 10px #282A35;
+    border: solid 7px #282A35;
   }
   
   
@@ -72,14 +72,13 @@
     left: 0;
     padding: 3rem;
     display: inline-block;
-    height:1vm;
     overflow: hidden;
   }
   
   
   #target, 
   #im {
-    white-space: pre;
+    //white-space: pre;
     display: inline-block;
   }
   
@@ -91,18 +90,14 @@
   }
   #codename{
     display: inline-block;
+    color: #FFB800;
   }
   
   #cursor{
     display: inline-block;
-    font-size: 1.5em;
     transform: scale(7, 1);
     visibility:hidden;
-  }
-  
-  #cursor{
     opacity: 1;
-    font-weight: 800;
   }
   
   #rows{
@@ -113,7 +108,7 @@
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .wrapper{
-      font-size: .5rem;
+      font-size: .7rem;
     }
     #typed-paragraph{
       padding: 1.5rem;

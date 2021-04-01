@@ -2,9 +2,9 @@
 
 .main{
     //position: absolute;
-    width: 80vw;
+    width: 70vw;
     height: 100vh;
-    margin-left: 20vw;
+    margin-left: 250px;
     padding: 6vh 0rem;
     display: none;
     opacity: 0;
@@ -14,11 +14,9 @@
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    //margin-bottom: 6vh;
-    flex-direction: column;
-    justify-content: center;
-    
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 }
 
 //  DECORATION
@@ -26,7 +24,6 @@
     font-family: 'Alex Brush', cursive;
     font-size: 1.2rem;
     color: $grey;
-    //text-shadow: 1px 1px 3px $black;
 }
 
 .html{
@@ -48,11 +45,27 @@
 
 
 // CONTENT
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
 .main-text{
     margin-left: 3rem;
 }
+
+
 .description{
-    font-size: 1.5rem;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transform: translate(0, -80%);
+}
+
+.description-text{
+    font-size: 1.3rem;
     background: -webkit-linear-gradient(45deg,$yellow, $violet);
     background-clip: text;
     -webkit-background-clip: text;
@@ -118,7 +131,7 @@
 
 .glitch::before {
     left: 3px;
-    text-shadow: -2px 0 $purple;
+    text-shadow: -2px 0 red;
     animation-name: glitch-animation-1;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -129,7 +142,7 @@
 
 .glitch::after {
     left: -3px;
-    text-shadow: -2px 0 $violet;
+    text-shadow: -2px 0 greenyellow;
     animation-name: glitch-animation-2;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -273,23 +286,26 @@
 // SECONDA SCHEDA
 #cv,
 #intro-cv,
-#desc-cv{
-    position: absolute;
-    top:50%;
-    left:0;
+#desc-cv,
+#army {
     color: white;
-    height: 3vh;
     visibility:hidden;
 }
 
-#intro-cv,
-#desc-cv{
-  color: grey;
-  font-size: 1rem;
+#years-army{
+    font-size:2rem!important;
+}
+
+#desc-army{
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    color: $darkgrey
 }
 
 
 // MEDIAQUERYES
+
+
 
 @media screen and (max-width: 768px){
     .main{
@@ -305,7 +321,11 @@
     }
 
     .description{
-        font-size:1rem
+        top: 70%;
+        transform: translate(0, -70%);
+    }
+    .description-text{
+        font-size:1rem;
     }
 }
 
@@ -313,9 +333,9 @@
     .main{
         margin:0 1rem;
     }
-    
     .description{
-        font-size:.7rem
+        top: 73%;
+        transform: translate(0, -73%);
     }
 
 }
