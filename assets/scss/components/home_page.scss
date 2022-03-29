@@ -120,6 +120,86 @@
    transform: scale(0);
  }
 
+
+
+// SECONDA SCHEDA
+#cv,
+#intro-cv,
+#desc-cv,
+#army,
+#unibari {
+    color: white;
+    visibility:hidden;
+}
+
+// TERZA SCHEDA
+#army, 
+#unibari {
+    margin-bottom: 0!important;
+}
+
+#years-army, 
+#years-unibari {
+    font-size:2.2rem!important;
+    margin-bottom: 1rem;
+}
+
+#desc-unibari,
+#desc-army {
+    margin-left: 3rem;
+    color: $darkgrey!important
+}
+
+// .desc{
+//     margin-left: 3rem;
+//     color: $darkgrey!important
+// }
+
+
+
+// MEDIAQUERYES
+
+@media screen and (max-width: 768px){
+    .main, .main-minus{
+        margin:0 2rem;
+    }
+
+    .angular{
+        font-size: 1rem;
+    }
+
+    .fixed-stick{
+        left: 1rem;
+    }
+
+    .description{
+        top: 73%;
+        transform: translate(0, -70%);
+    }
+
+    #years-army, 
+    #years-unibari{
+        font-size:2rem!important;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .main, .main-minus{
+        width: 90vw;
+        margin:0 1rem;
+    }
+    .description{
+        top: 70%;
+        transform: translate(0, -73%);
+    }
+    
+    #years-army, 
+    #years-unibari{
+        font-size:1.5rem!important;
+    }
+
+}
+
 // GLITCH
 .glitch {
     width: 100%;
@@ -289,70 +369,4 @@
     100% {
         clip: rect(5rem, 30rem, 7rem, 1rem);
     }
-}
-
-// SECONDA SCHEDA
-#cv,
-#intro-cv,
-#desc-cv,
-#army {
-    color: white;
-    visibility:hidden;
-}
-
-// TERZA SCHEDA
-#army{
-    margin-bottom: 0!important;
-}
-
-#years-army{
-    font-size:2.2rem!important;
-    margin-bottom: 1rem;
-}
-
-#desc-army{
-    margin-left: 3rem;
-    color: $darkgrey
-}
-
-
-// MEDIAQUERYES
-
-@media screen and (max-width: 768px){
-    .main, .main-minus{
-        margin:0 2rem;
-    }
-
-    .angular{
-        font-size: 1rem;
-    }
-
-    .fixed-stick{
-        left: 1rem;
-    }
-
-    .description{
-        top: 73%;
-        transform: translate(0, -70%);
-    }
-
-    #years-army{
-        font-size:2rem!important;
-    }
-}
-
-@media screen and (max-width: 550px){
-    .main, .main-minus{
-        width: 90vw;
-        margin:0 1rem;
-    }
-    .description{
-        top: 70%;
-        transform: translate(0, -73%);
-    }
-    
-    #years-army{
-        font-size:1.5rem!important;
-    }
-
 }

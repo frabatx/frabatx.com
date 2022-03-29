@@ -185,7 +185,7 @@ function scroll(){
     scrollTrigger:{trigger: "#army"}, 
     duration: 2,
     visibility:"visible",
-    text: `.ItalianArmy(0)`
+    text: `.ItalianArmy[0]`
   });
   gsap.to("#years-army", {
     scrollTrigger:{trigger: "#years-army"}, 
@@ -199,6 +199,28 @@ function scroll(){
     visibility:"visible",
     text: `Once I graduated, I joined the Italian army. 
     An extraordinary experience that led me to grow and visit different places in Italy!`
+  });
+
+  // Bachelor degree
+
+  gsap.to("#unibari", {
+    scrollTrigger:{trigger: "#unibari"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `.BachelorDegree[1]`
+  });
+  gsap.to("#years-unibari", {
+    scrollTrigger:{trigger: "#years-unibari"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `<2015-2018> Universitá degli Studi di Bari`
+  });
+  gsap.to("#desc-unibari", {
+    scrollTrigger:{trigger: "#desc-unibari"}, 
+    duration: 2,
+    visibility:"visible",
+    text: `The boredom in the army made me look for a better challenge. 
+    Computer Science was the best choice of my life!`
   });
 
 }

@@ -15,8 +15,8 @@
         {{ $style = slice $style $component | resources.Concat .Name }}
     {{ end}}
     
-    {{ $style := slice $style | resources.Concat "all.css" | toCSS  | minify | fingerprint}}
-    
+    {{ $style := slice $style | resources.Concat "all.css" | toCSS  | fingerprint}}
+    <!-- {{print $style.Permalink}} -->
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <!-- JS  -->
     <!-- Definisco il titolo  -->
